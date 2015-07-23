@@ -1,17 +1,17 @@
-body {
+/*body {
     text-align: center;
 }
 
 /* Instruction Page */
-h1, h2 {
+/*h1, h2 {
 	text-align: left;
 }
 ol li {
 	text-align: left;
-}
+}*/
 
 /* Buttons */
-.difficultyButton {
+/*.difficultyButton {
 	margin:10px;
 	text-align: center;
 	width: 100px;
@@ -31,10 +31,10 @@ ol li {
 .readyStart {
 	width: 200px;
 	height: 100px;
-}
+}*/
 
 /* Hide all the information other than the instructions */
-.avatarSelection {
+/*.avatarSelection {
 	display: none;
 }
 
@@ -52,4 +52,213 @@ ol li {
 
 .gameBoard {
 	display: none;
+}*/
+
+/* Styles */
+html {
+    font-family: helvetica, sans-serif, inconsolas;
+}
+
+body {
+    text-align: center;
+    width: 515px;
+    margin: 30px 0 50px 0;
+}
+
+#sidebar {
+  height: 100%;
+  padding-right: 0;
+  padding-top: 20px;
+  float: left;
+}
+
+#sidebar .nav {
+  width: 95%;
+  list-style-type: none;
+}
+
+#sidebar li {
+  border:0 #f2f2f2 solid;
+  border-bottom-width:1px;
+}
+
+.col-sm-9 {
+	float: right;
+}
+canvas {
+    margin: -20px 0px 0px 0px;
+}
+
+h1{
+    margin: 0px 0px 20px 0px;
+}
+
+h2 {
+    margin: 0px 0px 10px 0px;
+}
+
+#mobiApology {
+    display: none;
+    z-index: 2000;
+    position: absolute;
+    width: 515px;
+    height: 626px;
+    margin: 10px 0px 0px 0px;
+    padding: 20px 0px 0px 0px;
+    border: 1px solid black;
+    border-radius: 6px;
+    background-color: white;
+    text-align: center;
+}
+
+#selectionPopup {
+    z-index: 1000;
+    position: absolute;
+    width: 515px;
+    height: 626px;
+    margin: 10px 0px 0px 0px;
+    padding: 20px 0px 0px 0px;
+    border: 1px solid black;
+    border-radius: 6px;
+    background-color: white;
+    text-align: center;
+}
+
+.avatarImg {
+	height: 105px;
+	width: 63px;
+	margin: 0px 10px 15px 10px;
+    cursor: pointer;
+    border: 3px solid white;
+    border-radius: 6px;
+}
+
+.button {
+	height: 40px;
+	width: 120px;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: center;
+    border: 1px solid #333333;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 10px;
+    background-color: white;
+}
+
+.button:focus, .button:active, .button:focus:active {
+  background-image: none;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+#easyButton {
+	background-color: #9FDD59;
+}
+
+#mediumButtom {
+	background-color: #6C9FDE;
+}
+
+#hardButton {
+	background-color: #F2C755;
+}
+
+#startGame {
+    width: 200px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+}
+
+#lives {
+    position: absolute;
+    margin: 10px 0px 1px 12px;
+    font-weight: bold;
+}
+
+#timer {
+    position: absolute;
+    margin: 10px 0px 1px 4px;
+    width: 505px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#points {
+    position: absolute;
+    margin: 10px 12px 1px 0px;
+    width: 505px;
+    font-weight: bold;
+    text-align: right;
+}
+
+#dificultyText {
+    position: absolute;
+    margin: -15px 0px 0px 4px;
+    width: 505px;
+    text-align: center;
+}
+
+#resetButton {
+    margin: 10px 0px 0px 0px;
+}
+
+#gameOverPopup {
+    z-index: 1000;
+    position: absolute;
+    width: 515px;
+    height: 560px;
+    margin: 10px 0px 0px 0px;
+    padding: 20px 0px 0px 0px;
+    border: 1px solid black;
+    border-radius: 6px;
+    background-color: white;
+    text-align: center;
+    display: none;
+}
+
+#gameSummary {
+    margin: 140px 0px 140px 0px;
+}
+
+#pointsSummary {
+    margin: 13px 0px 10px 0px;
+    font-size: 400%;
+}
+
+#signature {
+    margin: 0px 0px 5px 0px;
+    color: #5E5E5E;
+}
+
+.sigImg {
+    width: 30px;
+    height: 30px;
+    margin: 0px 0px -2px 0px;
+}
+
+@media only screen and (max-device-width: 900px) {
+
+    h1{
+        margin: 0px 0px 20px 0px;
+    }
+
+    h2 {
+        margin: 20px 0px 10px 0px;
+    }
+
+    h4 {
+        margin: 20px 0px -7px 0px;
+    }
+
+    #mobiApology {
+        display: block;
+    }
+
+    #selectionPopup, #gameOverPopup, #resetButton {
+        display: none;
+    }
 }
